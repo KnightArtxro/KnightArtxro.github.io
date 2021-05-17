@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link type="text/css" rel="stylesheet" href="Fuentes/estilos.css" />
+  <link rel="stylesheet" href="Fuentes/estilos_inicio_sesion.css">
+  <title>Inicio_sesion</title>
+
+  <script>
+    $(Document).ready(function () {
+      $("#mensaje_error").hide();
+      $("#inicio_sesion").submit(function () {
+        var mensaje = "Los siguientes campos estan vacios:";
+        if ($("#correo").val().trim().length == 0) {
+          mensaje = mensaje + "<br> Correo"
+        }
+
+        if ($("#contrasena").val().trim().length == 0) {
+          mensaje = mensaje + "<br> Contraseña"
+
+        }
+        if (mensaje != "Los siguientes campos estan vacios:") {
+          $("#mensaje_error").html(mensaje);
+          $("#mensaje_error").show();
+          event.preventDefault();
+        }
+        if (mensaje == "Los siguientes campos estan vacios:") {
+          $("#submit")
+        }
+      });
+    });
+  </script>
+</head>
+
+<body background="imagenes/fondo_inicio_sesion.jpg">
+   <!-- Header-->
+
+   <nav class="navbar navbar-expand-md menuI navbar-dark">
+    <a class="navbar-brand" href="Inicio.html"><img src="imagenes/logo1.jpg" class="logo" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto ">
+            <li class="nav-item ">
+                <a class="nav-link link-nav" href="Menu.html"><b>MENU</b></a>
+            </li>
+            
+            <li class="nav-item ">
+                <a class="nav-link link-nav" href="local.html"><b>LOCALES</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link link-nav" href="nosotros.html"><b>NOSOTROS</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link link-nav" href="contactanos.html"><b>CONTACTANOS</b></a>
+              </li>
+              <br>
+    <a class="navbar-brand" style="font-family:initial;" href="Inicio_sesion.html"><img src="Imagenes/iconopollo.png" class="logo"
+        alt=""> </a>
+        <li>
+          <a class="navbar-brand" id="carrito" data-toggle="modal" href="#modal1"><img src="imagenes/Carrito.png" width="40px" alt=""></a>
+        </li>
+        </ul>
+    </div>
+</nav>
+<!-- Header-->
+
+
+  
+  <div class="container ajuste">
+    <form class="form in_se" action="Inicio.html" id="inicio_sesion">
+      <div id="mensaje_error" class="alert alert-danger"></div>
+      <h2 class="titulo">Inicio de sesion</h2>
+      <div class="form-group items row">
+        <div class="col-sm-10">
+          <input type="email" placeholder="&#9993; Correo" class="form-control" id="correo" autofocus>
+        </div>
+      </div>
+      <div class="form-group items row">
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="contrasena" placeholder="🔒 Contraseña">
+        </div>
+      </div>
+
+      <div class="form-group items row">
+          <button type="submit" class="boton1">Ingresar</button>
+          <button type="button" onclick="location.href='registrousuario.html'" class="boton2">Registrarse</button>
+        <div class="col-sm-10 dbtn3 ">
+          <button type="button" onclick="location.href='recuperarcon.html'" class="boton3">Recuperar contraseña</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div style="height: 150px;"></div>
+
+  <!-- Footer -->
+  <footer class="page-footer font-small unique-color-dark footer1">
+
+
+
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left mt-5">
+
+      <!-- Grid row -->
+      <div class="row mt-3">
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+          <!-- Content -->
+          <h6 class="text-uppercase font-weight-bold">Datos compañia</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>Somos una compañia independiente bla bla bla bla.</p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Redes Sociales</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a href=""><img src="imagenes/face.jpg" width="50px" alt=""></a>
+          </p>
+          <p>
+            <a href=""><img src="imagenes/twitt.png" width="50px" alt=""></a>
+          </p>
+          <p>
+            <a href=""><img src="imagenes/insta.jpg" width="50px" alt=""></a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Contacto</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <i class="fas fa-home mr-3"></i> P Sherman, Calle Wallaby, 42, Sydney.
+          </p>
+          <p>
+            <i class="fas fa-envelope mr-3"></i> Correo123@gmail.com
+          </p>
+          <p>
+            <i class="fas fa-phone mr-3"></i> + 569 738 389 12
+          </p>
+
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+
+
+  </footer>
+  <!-- Footer -->
+
+
+</body>
+
+</html>

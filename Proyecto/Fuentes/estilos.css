@@ -1,0 +1,675 @@
+ /* Inicio */
+ .carousel, .carousel-inner > .item > img {
+    
+    width: 60%;
+    height: 90%;
+    text-align: center;
+    position: relative;
+    left: 19%;
+  }
+
+
+.logo{
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;   
+    margin-left: 5px;
+}
+ /* fin Inicio */
+
+/* RRSS */
+
+
+
+.logos-end{
+    position: fixed;
+    position: sticky;
+    bottom: 50%;
+    display: block;
+    
+}
+
+.RRSS-face{
+    width: 50px;
+    margin: -50px 0px;
+    position: absolute;
+    transition: all 0.5s;
+    
+}
+
+.RRSS-insta{
+    width: 0px;
+    margin: 0;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+.RRSS-twitt{
+    width: 0px;
+    margin: 50px 0px;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+
+
+.RRSS-face:hover{
+    margin-left: 1%;  
+}
+
+.RRSS-insta:hover{
+    margin-left: 1%;  
+
+}
+
+.RRSS-twitt:hover{
+    margin-left: 1%;  
+
+}
+
+.img-RRSS{
+    width: 50px;
+
+}
+
+/* fin RRSS */
+
+ /* OFERTAS */
+.fondo-oferta1{
+    background-size: cover;
+    background-repeat: no-repeat; 
+    margin: auto; 
+
+}
+
+.oferta1{
+    width: 100%;
+    height: 320px;
+    position: relative;
+
+}
+
+.oferta1-image{
+    position:absolute;
+    margin: auto;
+    bottom: -10%;
+    width: 100%;
+    max-width: 400px;
+}
+
+.texto-oferta1{
+    border: 2px solid white;
+    color: white;
+    margin-top: 14%;
+    font-size: 46px;
+
+}
+
+
+
+.fondo-oferta2{
+    background-size: cover;
+    background-repeat: no-repeat; 
+    margin: auto; 
+    margin-top: 2%;
+
+}
+
+.oferta2{
+    width: 100%;
+    height: 320px;
+    position: relative;
+
+}
+
+.oferta2-image{
+    position:absolute;
+    top: 20px;
+    left: 70px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.texto-oferta2{
+    border: 2px solid white;
+    color: white;
+    margin-top: 14%;
+    font-size: 46px;
+
+}
+
+
+
+.fondo-oferta3{
+    background-size: cover;
+    background-repeat: no-repeat; 
+    margin: auto; 
+    margin-top: 2%;
+
+}
+
+.oferta3{
+    width: 100%;
+    height: 320px;
+    position: relative;
+
+}
+
+.oferta3-image{
+    position:absolute;
+    width: 100%;
+    max-width: 400px;
+ 
+}
+
+.texto-oferta3{
+    border: 2px solid white;
+    color: white;
+    margin-top: 14%;
+    font-size: 46px;
+
+}
+
+ /* fin OFERTAS */
+
+ body{
+     overflow-x: hidden;
+     background-color: rgb(221, 139, 31);
+     background-size: cover;
+     background-repeat: no-repeat;
+     
+ }
+ /* Menu */
+.menu{
+    width: 100%;
+    padding: 6%;
+    height: 91%;   
+}
+
+.hamburguer{
+    text-align: center;
+    padding-bottom: 2%;
+    
+}
+
+.submenu{
+    text-align: center;
+    background-color: #000000;
+    color: rgb(238, 176, 4);
+    border-bottom:  2px solid rgb(0, 0, 0); 
+    border-bottom-left-radius: 50%; 
+    border-bottom-right-radius: 50% ;
+}
+
+
+.details-hamburguer{
+    position: absolute;
+    right: 85%;
+    bottom: 142px;
+    z-index: -10;
+}
+
+.details-nuggets{
+    position: absolute;
+    left: 69%;
+    bottom: -250px;
+    z-index: -10;
+    clip-path: inset(0 40% 0 0);
+
+}
+
+.Nmenu{
+    text-align: center;
+    position: relative;
+    color: #000000;
+   font-size: 45px;
+    text-decoration: none;
+    top: -16px;
+
+}
+
+.Nmenu::before{
+    content: "";
+    background: orangered;
+    width: 0%;
+    height: 5px;
+    position: absolute;
+    top: -5%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.8s all;
+    z-index: 100;
+}
+
+.Nmenu::after{
+    content: "";
+    background: orangered;
+    width: 0%;
+    height: 5px;
+    position: absolute;
+    bottom: -5%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.8s all;
+    z-index: 100;
+}
+ /* fin menu */
+
+ /* hamburguesas */
+
+.comidaha
+{
+    max-height: 800px;
+    width: 85%;
+    padding: 5%;
+    height: 100%;   
+    margin-top: 10%;
+}
+
+ /* fin hamburguesas */
+
+ /* Helados */
+
+.comidahe
+{
+    max-height: 800px;
+    width: 85%;
+    padding: 5%;
+    height: 90%;   
+    margin-top: 117px;
+}
+
+ /* fin Helados */
+  /* Nuggets */
+.comidanu
+{
+    max-height: 800px;
+    width: 85%;
+    padding: 5%;
+    height: 100%;   
+    
+}
+ /* fin nuggets */
+
+  /* papas fritas */
+.comidapa
+{
+    max-height: 800px;   
+    margin-top: 10px;
+    width: 85%;
+    padding: 5%;
+    height: 100%;   
+    margin-top: 54px;
+    
+}
+
+ /* fin papas fritas */
+
+ /* categorias */
+
+h2{
+    font-family: 'BlockBeCnPro', Arial, Helvetica, sans-serif;
+    font-size: 34px;
+    line-height: 1; 
+    text-align: center;
+}
+
+
+
+
+.textoP
+{
+    margin-top: 2%;
+    font-size: 60px;
+    width: 100%;
+    padding: 5%;
+    height: 1050%; 
+    border: 5px solid #ffd28e;
+    background-color: #6b3621ea;
+    right: 1%;
+    
+
+}
+
+.textoha{
+    margin-top: 11%;
+    font-size: 60px;
+    width: 100%;
+    padding: 5%;
+    height: 1050%; 
+    border: 5px solid #ffd28e;
+    background-color: #6b3621ea;
+    right: 1%;
+    
+}
+
+.textopa{
+    margin-top: 10%;
+    font-size: 60px;
+    width: 100%;
+    padding: 5%;
+    height: 1050%; 
+    border: 5px solid #ffd28e;
+    background-color: #6b3621ea;
+    right: 1%;
+}
+.textohe{
+    margin-top: 12%;
+    font-size: 60px;
+    width: 100%;
+    padding: 5%;
+    height: 1050%; 
+    border: 5px solid #ffd28e;
+    background-color: #6b3621ea;
+    right: 1%;
+    
+}
+
+ /* fin categorias */
+
+
+.comida{
+    width: 85%;
+    padding: 5%;
+    height: 100%;   
+    margin-top: 54px;
+}
+
+
+ /* Navegador */
+.link-nav{
+    font-size: larger;
+    color: white;
+}
+
+.menuI{
+    background-color: #a5620bf6;
+    width: 100%;
+    color: white;
+}
+
+ /* fin navegador */
+
+
+ /* Hovers */
+
+.link-nav:hover{
+    background-color: brown;
+    color: aliceblue;
+}
+
+.Nmenu:hover{
+    text-decoration: none;
+    color: #000;
+}
+
+.Nmenu:hover::before{
+    width: 100%;
+ 
+}
+
+.Nmenu:hover::after{
+    width: 100%;
+ 
+}
+ /* fin de hovers */
+
+ /* media queries */ 
+@media screen and (max-width: 1100px) {
+    .details-hamburguer{
+        display: none;
+    }
+
+    .details-nuggets{
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width: 992px) {
+    
+    .Nmenu{
+        text-align: center;
+        position: relative;
+        color: #000000;
+       font-size: 34px;
+        text-decoration: none;
+        top: -16px;
+    
+    }
+
+   
+
+}
+    
+@media screen and (max-width: 1536px) {
+    
+        .details-hamburguer{
+            position: absolute;
+            right: 85%;
+            bottom: -90px;
+            z-index: -10;
+        }
+        
+        .details-nuggets{
+            position: absolute;
+            left: 65%;
+            bottom: -500px;
+            z-index: -10;
+            clip-path: inset(0 40% 0 0);
+        
+        }
+}
+
+@media screen and (max-width: 1367px) {
+    
+        .details-hamburguer{
+            position: absolute;
+            right: 87%;
+            bottom: -40px;
+            z-index: -10;
+        }
+        
+        .details-nuggets{
+            position: absolute;
+            left: 65%;
+            bottom: -410px;
+            z-index: -10;
+            clip-path: inset(0 40% 0 0);
+        
+        }
+        .menu{
+            width: 85%;
+            padding: 6%;
+            height: 91%;   
+        } 
+    }
+@media screen and (max-width: 400px) {
+    .carousel, .carousel-inner > .item > img {
+    
+            width: 80%;
+            height: 90%;
+            text-align: center;
+            position: relative;
+            left: 10%;
+          }
+    
+        
+       
+}
+
+
+
+
+ /* REGISTRO */ 
+
+ .registro {
+	max-width: 600px;
+	height: auto;
+	background-color: #EFEFEF;
+	margin: 5% auto;
+	padding-bottom: 1%;
+ }
+
+.forma {
+	width: 100%;
+	text-align: center;
+	padding: 30px;
+	margin-bottom: 10px;
+}
+
+
+h2{
+	color: #F39B53;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.form__reg {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	
+}
+.items{
+    justify-content: space-evenly;
+}
+
+.btn__form {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 5px;
+}
+
+.input, .btn__submit, .btn__reset{
+	background-color: wheat;
+	padding: 10px;
+	margin: 10px;
+	border: none;
+	border-bottom: solid #C8C8C8 .2rem;
+	transition: all .5s;
+}
+
+
+.btn__submit, .btn__reset {
+	width: 40%;
+	border-bottom: none;
+	background-color: #31B1E5;
+	color: white;
+}
+
+.btn__reset {
+	background-color: #EDA135;
+}
+
+
+
+       /* REGISTRO */ 
+
+.conta{
+    max-width: 800px;
+    background-color: wheat;
+    height: auto;
+    margin: 2% auto;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    border: 10px solid rgb(63, 62, 58);
+}
+
+.footer1{
+    background-color: rgb(68, 58, 58);
+    color: white;
+    padding: 1%;
+    
+}
+.boton1, .boton2,.boton3, .boton4, .boton5{
+    border: none;
+    margin: 10px;
+    padding: 10px;
+    transition: all 0.4s;
+}
+
+
+.boton1{
+    background-color: #31B1E5;
+    
+}
+
+.boton2{
+    background-color: #F39B53 ;
+    
+}
+
+.dbtn3{
+    text-align: center;
+}
+
+.boton3{
+    color: white;
+    background-color: black;
+    
+}
+.boton4{
+    color: white;
+    background-color: #c56b00;
+}
+.boton5{
+    color: white;
+    background-color: #f1970f ;    
+}
+.boton1:hover, .boton2:hover, .boton3:hover, .boton4:hover,.boton5:hover{
+    filter: contrast(0.5);
+}
+
+.map-wrapper{
+    max-width: 601px;
+    max-height: 456px;
+    
+}
+.google-map{
+    width: 100%;
+}
+
+.btn_agregar{
+    background-color: wheat;
+    max-width: 415px;
+    height: 67px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 37px;
+    border-bottom: solid black 5px;
+}
+.btn_agregar:hover{
+
+    color:#F39B53
+
+}
+
+@media screen and (max-width: 400px) {    
+    .btn_agregar{
+        background-color: wheat;
+        max-width: 415px;
+        height: 55px;
+        font-weight: bold;
+        font-size: 25px;
+        border-bottom: solid black 5px;
+    
+        }
+       
+}
+
+.botonH1,.botonH1,.botonH3{
+    border: none;
+    margin: 10px;
+    padding: 5px;
+    transition: all 0.4s;
+    width: 100%;
+}
+.botonH1:hover,.botonH2:hover,.botonH3:hover{
+    filter: contrast(0.5);
+}
+.botonH1,.botonH1,.botonH3{
+    color: white;
+    background-color: #f1970f ;    
+}

@@ -1,0 +1,295 @@
+ /* Inicio */
+ .carousel, .carousel-inner > .item > img {
+    
+    width: 60%;
+    height: 90%;
+    text-align: center;
+    position: relative;
+    left: 19%;
+  }
+
+
+.logo{
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;   
+    margin-left: 5px; 
+}
+ /* fin Inicio */
+
+/* RRSS */
+
+
+
+.logos-end{
+    position: fixed;
+    position: sticky;
+    bottom: 50%;
+    display: block;
+    
+}
+
+.RRSS-face{
+    width: 50px;
+    margin: -50px 0px;
+    position: absolute;
+    transition: all 0.5s;
+    
+}
+
+.RRSS-insta{
+    width: 0px;
+    margin: 0;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+.RRSS-twitt{
+    width: 0px;
+    margin: 50px 0px;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+
+
+.RRSS-face:hover{
+    margin-left: 1%;  
+}
+
+.RRSS-insta:hover{
+    margin-left: 1%;  
+
+}
+
+.RRSS-twitt:hover{
+    margin-left: 1%;  
+
+}
+
+.img-RRSS{
+    width: 50px;
+
+}
+
+/* fin RRSS */
+
+body{
+    overflow-x: hidden;
+    background-color: rgb(221, 139, 31);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+/* Menu */
+.menu{
+   width: 100%;
+   padding: 6%;
+   height: 91%;   
+}
+
+.hamburguer{
+   text-align: center;
+   padding-bottom: 2%;
+   
+}
+
+.submenu{
+   text-align: center;
+   background-color: #000000;
+   color: rgb(238, 176, 4);
+   border-bottom:  2px solid rgb(0, 0, 0); 
+   border-bottom-left-radius: 50%; 
+   border-bottom-right-radius: 50% ;
+}
+
+
+.details-hamburguer{
+   position: absolute;
+   right: 85%;
+   bottom: 142px;
+   z-index: -10;
+}
+
+.details-nuggets{
+   position: absolute;
+   left: 69%;
+   bottom: -250px;
+   z-index: -10;
+   clip-path: inset(0 40% 0 0);
+
+}
+
+.Nmenu{
+   text-align: center;
+   position: relative;
+   color: #000000;
+  font-size: 45px;
+   text-decoration: none;
+   top: -16px;
+
+}
+
+.Nmenu::before{
+   content: "";
+   background: orangered;
+   width: 0%;
+   height: 5px;
+   position: absolute;
+   top: -5%;
+   left: 50%;
+   transform: translateX(-50%);
+   transition: 0.8s all;
+   z-index: 100;
+}
+
+.Nmenu::after{
+   content: "";
+   background: orangered;
+   width: 0%;
+   height: 5px;
+   position: absolute;
+   bottom: -5%;
+   left: 50%;
+   transform: translateX(-50%);
+   transition: 0.8s all;
+   z-index: 100;
+}
+/* fin menu */
+
+ /* categorias */
+
+ h2{
+    font-family: 'BlockBeCnPro', Arial, Helvetica, sans-serif;
+    font-size: 34px;
+    line-height: 1; 
+    text-align: center;
+}
+
+ /* fin categorias */
+
+
+ .comida
+ {
+     width: 85%;
+     padding: 5%;
+     height: 100%;   
+     margin-top: 54px;
+ }
+ 
+ 
+  /* Navegador */
+ .link-nav{
+     font-size: larger;
+     color: white;
+ }
+ 
+ .menuI{
+     background-color: #a5620bf6;
+     width: 100%;
+     color: white;
+ }
+ 
+  /* fin navegador */
+ 
+ 
+  /* Hovers */
+ 
+ .link-nav:hover{
+     background-color: brown;
+     color: aliceblue;
+ }
+ 
+ .Nmenu:hover{
+     text-decoration: none;
+     color: #000;
+ }
+ 
+ .Nmenu:hover::before{
+     width: 100%;
+  
+ }
+ 
+ .Nmenu:hover::after{
+     width: 100%;
+  
+ }
+  /* fin de hovers */
+ 
+  /* media queries */ 
+ @media screen and (max-width: 1100px) {
+     .details-hamburguer{
+         display: none;
+     }
+ 
+     .details-nuggets{
+         display: none;
+     }
+ 
+ }
+ @media screen and (max-width: 992px) {
+     
+     .Nmenu{
+         text-align: center;
+         position: relative;
+         color: #000000;
+        font-size: 34px;
+         text-decoration: none;
+         top: -16px;
+     
+     }
+}
+@media screen and (max-width: 1536px) {
+    
+    .details-hamburguer{
+        position: absolute;
+        right: 85%;
+        bottom: -90px;
+        z-index: -10;
+    }
+    
+    .details-nuggets{
+        position: absolute;
+        left: 65%;
+        bottom: -500px;
+        z-index: -10;
+        clip-path: inset(0 40% 0 0);
+    
+    }
+}
+@media screen and (max-width: 1367px) {
+
+    .details-hamburguer{
+        position: absolute;
+        right: 87%;
+        bottom: -40px;
+        z-index: -10;
+    }
+    
+    .details-nuggets{
+        position: absolute;
+        left: 65%;
+        bottom: -410px;
+        z-index: -10;
+        clip-path: inset(0 40% 0 0);
+    
+    }
+    .menu{
+        width: 85%;
+        padding: 6%;
+        height: 91%;   
+    } 
+}
+@media screen and (max-width: 400px) {
+    .carousel, .carousel-inner > .item > img {
+
+        width: 80%;
+        height: 90%;
+        text-align: center;
+        position: relative;
+        left: 10%;
+      }
+
+
+   
+}

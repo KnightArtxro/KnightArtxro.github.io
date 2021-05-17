@@ -1,0 +1,191 @@
+ /* Inicio */
+ .carousel, .carousel-inner > .item > img {
+    
+    width: 60%;
+    height: 90%;
+    text-align: center;
+    position: relative;
+    left: 19%;
+  }
+
+
+.logo{
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;   
+    margin-left: 5px;
+}
+ /* fin Inicio */
+
+/* RRSS */
+
+
+
+.logos-end{
+    position: fixed;
+    position: sticky;
+    bottom: 50%;
+    display: block;
+    
+}
+
+.RRSS-face{
+    width: 50px;
+    margin: -50px 0px;
+    position: absolute;
+    transition: all 0.5s;
+    
+}
+
+.RRSS-insta{
+    width: 0px;
+    margin: 0;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+.RRSS-twitt{
+    width: 0px;
+    margin: 50px 0px;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+
+
+.RRSS-face:hover{
+    margin-left: 1%;  
+}
+
+.RRSS-insta:hover{
+    margin-left: 1%;  
+
+}
+
+.RRSS-twitt:hover{
+    margin-left: 1%;  
+
+}
+
+.img-RRSS{
+    width: 50px;
+
+}
+
+/* fin RRSS */
+
+/* Body */
+body{
+    overflow-x: hidden;
+    background-color: rgb(221, 139, 31);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.submenu{
+    text-align: center;
+    background-color: #000000;
+    color: rgb(238, 176, 4);
+    border-bottom:  2px solid rgb(0, 0, 0); 
+    border-bottom-left-radius: 50%; 
+    border-bottom-right-radius: 50% ;
+}
+
+/* Fin Body */
+
+  /* papas fritas */
+  .comidapa
+  {
+      margin-top: 10px;
+      width: 85%;
+      padding: 5%;
+      height: 100%;   
+      margin-top: 54px;
+  }
+
+   /* fin papas fritas */
+
+ /* categorias */
+
+h2{
+    font-family: 'BlockBeCnPro', Arial, Helvetica, sans-serif;
+    font-size: 34px;
+    line-height: 1; 
+    text-align: center;
+}
+
+.textopa
+{
+    margin-top: 10%;
+    font-size: 60px;
+    width: 100%;
+    padding: 5%;
+    height: 1050%; 
+    border: 17px solid #b36e07;
+    background-color: #cf4c18ea;
+    right: 1%;
+}
+ /* fin categorias */
+
+
+ .comida
+ {
+     width: 85%;
+     padding: 5%;
+     height: 100%;   
+     margin-top: 54px;
+ }
+ 
+ 
+  /* Navegador */
+ .link-nav{
+     font-size: larger;
+     color: white;
+ }
+ 
+ .menuI{
+     background-color: #a5620bf6;
+     width: 100%;
+     color: white;
+ }
+ 
+  /* fin navegador */
+ 
+ 
+  /* Hovers */
+ 
+ .link-nav:hover{
+     background-color: brown;
+     color: aliceblue;
+ }
+ 
+ .Nmenu:hover{
+     text-decoration: none;
+     color: #000;
+ }
+ 
+ .Nmenu:hover::before{
+     width: 100%;
+  
+ }
+ 
+ .Nmenu:hover::after{
+     width: 100%;
+  
+ }
+  /* fin de hovers */
+
+  @media screen and (max-width: 400px) {
+    .carousel, .carousel-inner > .item > img {
+
+        width: 80%;
+        height: 90%;
+        text-align: center;
+        position: relative;
+        left: 10%;
+      }
+
+
+   
+}
